@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import "react-toastify/dist/ReactToastify.css"
+import "font-awesome/css/font-awesome.css"
+import { ToastContainer } from "react-toastify";
+import { ComponenteNome } from "./Componentes/ComponenteNome.jsx";
+import { ComponeteResumoSobreVoce } from './Componentes/ComponenteResumoSobreVoce.jsx';
+import { ComponenteCompetencia } from "./Componentes/ComponenteCompetencia.jsx";
+import { ComponenteFormacao } from './exercicio/ComponenteFormacao.jsx';
+import { RouteApp } from './routes/index.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <RouteApp />
+
+  )
 }
 
 export default App;
